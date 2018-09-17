@@ -938,7 +938,7 @@ EOF
 			$sHtml .= "</style>\n";
 		}
 		$sHtml .= "<link rel=\"search\" type=\"application/opensearchdescription+xml\" title=\"iTop\" href=\"".utils::GetAbsoluteUrlAppRoot()."pages/opensearch.xml.php\" />\n";
-		$sHtml .= "<link rel=\"shortcut icon\" href=\"".utils::GetAbsoluteUrlAppRoot()."images/favicon.ico?itopversion=".ITOP_VERSION."\" />\n";
+		$sHtml .= "<link rel=\"shortcut icon\" href=\"".utils::GetAbsoluteUrlAppRoot()."images/favicon_1.ico?itopversion=".ITOP_VERSION."\" />\n";
 	
 		$sHtml .= "</head>\n";
 		$sBodyClass = "";
@@ -998,11 +998,11 @@ EOF
 			{
 				$sLogonMessage = Dict::Format('UI:LoggedAsMessage', $sUserName);
 			}
-			$sLogOffMenu = "<span id=\"logOffBtn\"><ul><li><img src=\"../images/on-off-menu.png\"><ul>";
+			$sLogOffMenu = "<span id=\"logOffBtn\"><ul><li><img src=\"../images/on-off-menu_1.png\"><ul>";
 			$sLogOffMenu .= "<li><span>$sLogonMessage</span></li>\n";
 			$aActions = array();
 
-            $aAllowedPortals = UserRights::GetAllowedPortals();
+            //$aAllowedPortals = UserRights::GetAllowedPortals();
             if(count($aAllowedPortals) > 1)
             {
                 // Adding portals
@@ -1014,6 +1014,7 @@ EOF
                         $aActions[$oPortalMenuItem->GetUID()] = $oPortalMenuItem->GetMenuItem();
                     }
                 }
+		
                 // Adding a separator
                 $oPortalSeparatorMenuItem = new SeparatorPopupMenuItem();
                 $aActions[$oPortalSeparatorMenuItem->GetUID()] = $oPortalSeparatorMenuItem->GetMenuItem();
@@ -1047,8 +1048,9 @@ EOF
 			}
 			utils::GetPopupMenuItems($this, iPopupMenuExtension::MENU_USER_ACTIONS, null, $aActions);
 
-			$oAbout = new JSPopupMenuItem('UI:AboutBox', Dict::S('UI:AboutBox'), 'return ShowAboutBox();');
-			$aActions[$oAbout->GetUID()] = $oAbout->GetMenuItem();
+//			$oAbout = new JSPopupMenuItem('UI:AboutBox', Dict::S('UI:AboutBox'), 'return ShowAboutBox();');
+
+//			$aActions[$oAbout->GetUID()] = $oAbout->GetMenuItem();
 
 			$sLogOffMenu .= $this->RenderPopupMenuItems($aActions);
 
@@ -1109,7 +1111,7 @@ EOF;
 			$sOnlineHelpUrl = MetaModel::GetConfig()->Get('online_help');
 			//$sLogOffMenu = "<span id=\"logOffBtn\" style=\"height:55px;padding:0;margin:0;\"><img src=\"../images/onOffBtn.png\"></span>";
 
-			$sDisplayIcon = utils::GetAbsoluteUrlAppRoot().'images/itop-logo.png?itopversion='.ITOP_VERSION;
+			$sDisplayIcon = utils::GetAbsoluteUrlAppRoot().'images/logo_11.png?itopversion='.ITOP_VERSION;
 			if (file_exists(MODULESROOT.'branding/main-logo.png'))
 			{
 				$sDisplayIcon = utils::GetAbsoluteUrlModulesRoot().'branding/main-logo.png?itopversion='.ITOP_VERSION;
@@ -1139,7 +1141,7 @@ EOF;
 			$sHtml .= '			</div>';
 			$sHtml .= '		</div> <!-- /inner menu -->';
 			$sHtml .= ' </div> <!-- /menu -->';
-			$sHtml .= ' <div class="footer ui-layout-south"><div id="combodo_logo"><a href="http://www.combodo.com" title="www.combodo.com" target="_blank"><img src="../images/logo-combodo.png?itopversion='.ITOP_VERSION.'"/></a></div></div>';
+			//$sHtml .= ' <div class="footer ui-layout-south"><div id="combodo_logo"><a href="http://www.combodo.com" title="www.combodo.com" target="_blank"><img src="../images/logo-combodo.png?itopversion='.ITOP_VERSION.'"/></a></div></div>';
 			$sHtml .= '<!-- End of the left pane -->';
 			$sHtml .= '</div>';
 
@@ -1152,10 +1154,10 @@ EOF;
 			$sHtml .= ' <table id="top-bar-table">';
 			$sHtml .= ' <tr>';
 			$sHtml .= ' <td id="open-left-pane"  class="menu-pane-exclusive" style="'.$GoHomeInitialStyle.'" onclick="$(\'body\').layout().open(\'west\');">';
-			$sHtml .= ' <img src="../images/menu.png">';
+			$sHtml .= ' <img src="../images/menu_1.png">';
 			$sHtml .= ' </td>';
 			$sHtml .= ' <td id="go-home" class="menu-pane-exclusive" style="'.$GoHomeInitialStyle.'">';
-			$sHtml .= ' <a href="'.utils::GetAbsoluteUrlAppRoot().'pages/UI.php"><img src="../images/home.png"></a>';
+			$sHtml .= ' <a href="'.utils::GetAbsoluteUrlAppRoot().'pages/UI.php"><img src="../images/home_1.png"></a>';
 			$sHtml .= ' </td>';
 			$sHtml .= ' <td class="top-bar-spacer menu-pane-exclusive" style="'.$GoHomeInitialStyle.'">';
 			$sHtml .= ' </td>';
@@ -1166,7 +1168,7 @@ EOF;
 			$sHtml .= '		<div id="global-search"><form action="'.utils::GetAbsoluteUrlAppRoot().'pages/UI.php">';
 			$sHtml .= '		<table id="top-left-buttons-area"><tr>';
 			$sHtml .= '			<td id="top-left-global-search-cell"><div id="global-search-area"><input id="global-search-input" type="text" name="text" placeholder="'.$sText.'"></input><div '.$sOnClick.' id="global-search-image"><input type="hidden" name="operation" value="full_text"/></div></div></td>';
-			$sHtml .= '     	<td id="top-left-help-cell"><a id="help-link" href="'.$sOnlineHelpUrl.'" target="_blank"><img title="'.Dict::S('UI:Help').'" src="../images/help.png?itopversion='.ITOP_VERSION.'"/></td>';
+			//$sHtml .= '     	<td id="top-left-help-cell"><a id="help-link" href="'.$sOnlineHelpUrl.'" target="_blank"><img title="'.Dict::S('UI:Help').'" src="../images/help.png?itopversion='.ITOP_VERSION.'"/></td>';
 			$sHtml .= '     	<td id="top-left-logoff-cell">'.self::FilterXSS($sLogOffMenu).'</td>';
 			$sHtml .= '     </tr></table></form></div>';
 			$sHtml .= ' </td>';

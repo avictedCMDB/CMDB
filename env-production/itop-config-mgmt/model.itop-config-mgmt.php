@@ -4001,14 +4001,14 @@ class MenuCreation_itop_config_mgmt extends ModuleHandlerAPI
 		$__comp_menus__['ConfigManagement'] = new MenuGroup('ConfigManagement', 20);
 		$__comp_menus__['ConfigManagementOverview'] = new DashboardMenuNode('ConfigManagementOverview', dirname(__FILE__).'/configmanagementoverview_dashboard_menu.xml', $__comp_menus__['ConfigManagement']->GetIndex(), 1);
 		$__comp_menus__['Contact'] = new DashboardMenuNode('Contact', dirname(__FILE__).'/contact_dashboard_menu.xml', $__comp_menus__['ConfigManagement']->GetIndex(), 2);
-		$__comp_menus__['NewContact'] = new NewObjectMenuNode('NewContact', 'Contact', $__comp_menus__['Contact']->GetIndex(), 3);
-		$__comp_menus__['SearchContacts'] = new SearchMenuNode('SearchContacts', 'Contact', $__comp_menus__['Contact']->GetIndex(), 4);
+		//$__comp_menus__['NewContact'] = new NewObjectMenuNode('NewContact', 'Contact', $__comp_menus__['Contact']->GetIndex(), 3);
+		//$__comp_menus__['SearchContacts'] = new SearchMenuNode('SearchContacts', 'Contact', $__comp_menus__['Contact']->GetIndex(), 4);
 		$__comp_menus__['Location'] = new OQLMenuNode('Location', "SELECT Location", $__comp_menus__['ConfigManagement']->GetIndex(), 3, true, null);
-		$__comp_menus__['NewCI'] = new NewObjectMenuNode('NewCI', 'FunctionalCI', $__comp_menus__['ConfigManagement']->GetIndex(), 4);
-		$__comp_menus__['SearchCIs'] = new SearchMenuNode('SearchCIs', 'FunctionalCI', $__comp_menus__['ConfigManagement']->GetIndex(), 5);
-		$__comp_menus__['Document'] = new OQLMenuNode('Document', "SELECT Document", $__comp_menus__['ConfigManagement']->GetIndex(), 6, true, null);
+		//$__comp_menus__['NewCI'] = new NewObjectMenuNode('NewCI', 'FunctionalCI', $__comp_menus__['ConfigManagement']->GetIndex(), 4);
+		//$__comp_menus__['SearchCIs'] = new SearchMenuNode('SearchCIs', 'FunctionalCI', $__comp_menus__['ConfigManagement']->GetIndex(), 5);
+		//$__comp_menus__['Document'] = new OQLMenuNode('Document', "SELECT Document", $__comp_menus__['ConfigManagement']->GetIndex(), 6, true, null);
 		$__comp_menus__['Software'] = new OQLMenuNode('Software', "SELECT Software", $__comp_menus__['ConfigManagement']->GetIndex(), 7, true, null);
-		$__comp_menus__['Group'] = new OQLMenuNode('Group', "SELECT Group", $__comp_menus__['ConfigManagement']->GetIndex(), 8, true, null);
+		//$__comp_menus__['Group'] = new OQLMenuNode('Group', "SELECT Group", $__comp_menus__['ConfigManagement']->GetIndex(), 8, true, null);
 		$__comp_menus__['Typology'] = new DashboardMenuNode('Typology', dirname(__FILE__).'/typology_dashboard_menu.xml', $__comp_menus__['Catalogs']->GetIndex(), 80);
 	}
 } // class MenuCreation_itop_config_mgmt

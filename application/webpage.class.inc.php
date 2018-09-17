@@ -555,7 +555,7 @@ class WebPage implements Page
         }
         if (class_exists('MetaModel') && MetaModel::GetConfig())
         {
- 			echo "<link rel=\"shortcut icon\" href=\"".utils::GetAbsoluteUrlAppRoot()."images/favicon.ico?itopversion=".ITOP_VERSION."\" />\n";
+ 			echo "<link rel=\"shortcut icon\" href=\"".utils::GetAbsoluteUrlAppRoot()."images/favicon_1.ico?itopversion=".ITOP_VERSION."\" />\n";
         }
         echo "</head>\n";
         echo "<body>\n";

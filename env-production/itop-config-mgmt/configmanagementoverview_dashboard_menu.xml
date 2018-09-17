@@ -24,22 +24,27 @@
           <rank>1</rank>
           <class>Rack</class>
         </dashlet>
+
         <dashlet id="22" xsi:type="DashletBadge" _altered_in="itop-datacenter-mgmt">
           <rank>2</rank>
           <class>Enclosure</class>
         </dashlet>
+	
         <dashlet id="23" xsi:type="DashletBadge" _altered_in="itop-datacenter-mgmt">
           <rank>9</rank>
           <class>PowerConnection</class>
         </dashlet>
+	<!--
         <dashlet id="33" xsi:type="DashletBadge" _altered_in="itop-storage-mgmt">
           <rank>5</rank>
           <class>StorageSystem</class>
         </dashlet>
+	-->
         <dashlet id="34" xsi:type="DashletBadge" _altered_in="itop-storage-mgmt">
           <rank>6</rank>
           <class>SANSwitch</class>
         </dashlet>
+	<!--
         <dashlet id="35" xsi:type="DashletBadge" _altered_in="itop-storage-mgmt">
           <rank>7</rank>
           <class>NAS</class>
@@ -47,6 +52,11 @@
         <dashlet id="36" xsi:type="DashletBadge" _altered_in="itop-storage-mgmt">
           <rank>8</rank>
           <class>TapeLibrary</class>
+        </dashlet>
+	-->
+	<dashlet id="31" xsi:type="DashletBadge">
+          <rank>7</rank>
+          <class>Printer</class>
         </dashlet>
       </dashlets>
     </cell>
@@ -58,10 +68,12 @@
           <title>Menu:ConfigManagement:SWAndApps</title>
           <icon>itop-config-mgmt/images/application.png</icon>
         </dashlet>
+	<!--
         <dashlet id="5" xsi:type="DashletBadge">
           <rank>1</rank>
           <class>Middleware</class>
         </dashlet>
+	-->
         <dashlet id="6" xsi:type="DashletBadge">
           <rank>2</rank>
           <class>DBServer</class>
@@ -70,6 +82,7 @@
           <rank>3</rank>
           <class>WebServer</class>
         </dashlet>
+	<!--
         <dashlet id="8" xsi:type="DashletBadge">
           <rank>4</rank>
           <class>PCSoftware</class>
@@ -82,6 +95,7 @@
           <rank>6</rank>
           <class>MiddlewareInstance</class>
         </dashlet>
+	-->
         <dashlet id="11" xsi:type="DashletBadge">
           <rank>7</rank>
           <class>DatabaseSchema</class>
@@ -90,6 +104,7 @@
           <rank>8</rank>
           <class>WebApplication</class>
         </dashlet>
+	<!--
         <dashlet id="13" xsi:type="DashletBadge">
           <rank>9</rank>
           <class>Patch</class>
@@ -98,6 +113,7 @@
           <rank>10</rank>
           <class>Licence</class>
         </dashlet>
+	-->
       </dashlets>
     </cell>
     <cell id="4">
@@ -120,6 +136,7 @@
           <rank>2.1</rank>
           <class>VLAN</class>
         </dashlet>
+	<!--
         <dashlet id="18" xsi:type="DashletBadge">
           <rank>4</rank>
           <class>BusinessProcess</class>
@@ -136,8 +153,10 @@
           <rank>3</rank>
           <class>LogicalVolume</class>
         </dashlet>
+	-->
       </dashlets>
     </cell>
+    <!--
     <cell id="2" _altered_in="itop-endusers-devices">
       <rank>2</rank>
       <dashlets>
@@ -150,6 +169,7 @@
           <rank>1</rank>
           <class>PC</class>
         </dashlet>
+		
         <dashlet id="27" xsi:type="DashletBadge">
           <rank>2</rank>
           <class>Phone</class>
@@ -166,16 +186,20 @@
           <rank>5</rank>
           <class>Tablet</class>
         </dashlet>
+
         <dashlet id="31" xsi:type="DashletBadge">
           <rank>6</rank>
           <class>Printer</class>
         </dashlet>
+	
         <dashlet id="32" xsi:type="DashletBadge">
           <rank>7</rank>
           <class>Peripheral</class>
         </dashlet>
+	
       </dashlets>
     </cell>
+    -->
     <cell id="1" _altered_in="itop-virtualization-mgmt">
       <rank>1</rank>
       <dashlets>

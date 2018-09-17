@@ -808,7 +808,7 @@ Operators:<br/>
 	'Class:URP_AttributeGrant/Attribute:attcode+' => 'attribute code',
 	'BooleanLabel:yes' => 'yes',
 	'BooleanLabel:no' => 'no',
-	'UI:Login:Title' => 'iTop login',
+	'UI:Login:Title' => 'CMDB login',
 	'Menu:WelcomeMenu' => 'Welcome',
 	'Menu:WelcomeMenu+' => 'Welcome to iTop',
 	'Menu:WelcomeMenuPage' => 'Welcome',

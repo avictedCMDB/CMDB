@@ -1134,6 +1134,7 @@ Dict::Add('ZH CN', 'Chinese', '简体中文', array(
 	'Class:FunctionalCI/Attribute:providercontracts_list+' => 'All the provider contracts for this configuration item~~',
 	'Class:FunctionalCI/Attribute:services_list' => 'Services~~',
 	'Class:FunctionalCI/Attribute:services_list+' => 'All the services impacted by this configuration item~~',
+	
 	'Class:FunctionalCI/Attribute:softwares_list' => 'Softwares~~',
 	'Class:FunctionalCI/Attribute:softwares_list+' => 'All the softwares installed on this configuration item~~',
 	'Class:FunctionalCI/Attribute:tickets_list' => 'Tickets~~',

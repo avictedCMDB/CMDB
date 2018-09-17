@@ -2,19 +2,22 @@
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
   <classes/>
   <user_rights>
+   
     <groups>
       <group id="General" _delta="define">
         <classes>
           <class id="Organization"/>
-          <class id="Location"/>
+          <<class id="Location"/>
           <class id="Contact"/>
         </classes>
       </group>
+      
       <group id="Documentation" _delta="define">
         <classes>
           <class id="Document"/>
         </classes>
       </group>
+      
       <group id="Configuration" _delta="define">
         <classes>
           <class id="Licence"/>

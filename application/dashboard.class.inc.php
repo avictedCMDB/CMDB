@@ -550,17 +550,19 @@ class RuntimeDashboard extends Dashboard
 		$oPage->add_linked_script(utils::GetAbsoluteUrlAppRoot().'js/jquery.iframe-transport.js');
 		$oPage->add_linked_script(utils::GetAbsoluteUrlAppRoot().'js/jquery.fileupload.js');
 		$sEditMenu = "<td><span id=\"DashboardMenu\"><ul><li><img src=\"../images/pencil-menu.png\"><ul>";
-	
+		
 		$aActions = array();
 		$oEdit = new JSPopupMenuItem('UI:Dashboard:Edit', Dict::S('UI:Dashboard:Edit'), "return EditDashboard('{$this->sId}')");
 		$aActions[$oEdit->GetUID()] = $oEdit->GetMenuItem();
-
+		
 		if ($this->bCustomized)
 		{
 			$oRevert = new JSPopupMenuItem('UI:Dashboard:RevertConfirm', Dict::S('UI:Dashboard:Revert'),
 											"if (confirm('".addslashes(Dict::S('UI:Dashboard:RevertConfirm'))."')) return RevertDashboard('{$this->sId}'); else return false");
 			$aActions[$oRevert->GetUID()] = $oRevert->GetMenuItem();
+
 		}
+		
 		utils::GetPopupMenuItems($oPage, iPopupMenuExtension::MENU_DASHBOARD_ACTIONS, $this, $aActions);
 		$sEditMenu .= $oPage->RenderPopupMenuItems($aActions);
 				
@@ -571,6 +573,7 @@ class RuntimeDashboard extends Dashboard
 <<<EOF
 	$('#logOffBtn').parent().before('$sEditMenu');
 	$('#DashboardMenu>ul').popupmenu();
+	
 	
 EOF
 		);
@@ -598,6 +601,7 @@ function RevertDashboard(sId)
 }
 EOF
 		);
+	
 	}
 
 	public function RenderProperties($oPage)

@@ -8,7 +8,7 @@
 }
 #calendar_div {
 	display: none;
-	border: 1px solid #FF9900;
+	border: 1px solid #1E90FF; //FF9900
 	z-index: 10; /*must have*/ 
 }
 #calendar_div, .calendar_control, .calendar_links, .calendar_header, .calendar {
@@ -46,7 +46,7 @@ img.calendar_trigger {
 	color: #fff;
 }
 .calendar_control {
-	background: #FF9900;
+	background: #1E90FF;
 }
 .calendar_links {
 	background: #E0F4D7;

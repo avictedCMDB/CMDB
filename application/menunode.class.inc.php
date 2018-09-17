@@ -933,7 +933,7 @@ class DashboardMenuNode extends MenuNode
 			$oPage->add('<div class="dashboard_contents" id="'.$sDivId.'">');
 			$oDashboard->Render($oPage, false, $aExtraParams);
 			$oPage->add('</div>');
-			$oDashboard->RenderEditionTools($oPage);
+			//$oDashboard->RenderEditionTools($oPage);
 
 			if ($oDashboard->GetAutoReload())
 			{

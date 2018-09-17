@@ -11,6 +11,7 @@
           <title>Menu:ConfigManagementCI</title>
           <icon>itop-welcome-itil/images/database.png</icon>
         </dashlet>
+	<!--
         <dashlet id="2" xsi:type="DashletBadge">
           <rank>1</rank>
           <class>BusinessProcess</class>
@@ -19,6 +20,7 @@
           <rank>2</rank>
           <class>ApplicationSolution</class>
         </dashlet>
+	-->
         <dashlet id="4" xsi:type="DashletBadge">
           <rank>3</rank>
           <class>Contact</class>
@@ -27,10 +29,12 @@
           <rank>4</rank>
           <class>Location</class>
         </dashlet>
+	<!--
         <dashlet id="6" xsi:type="DashletBadge">
           <rank>5</rank>
           <class>Contract</class>
         </dashlet>
+	-->
         <dashlet id="7" xsi:type="DashletBadge">
           <rank>6</rank>
           <class>Server</class>

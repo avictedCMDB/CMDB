@@ -1,0 +1,4 @@
+2018-08-27 14:07:16 | Error | DOMDocument::loadXML(): Opening and ending tag mismatch: daEnclosureshlet line 27 and dashlet in Entity, line: 30
+2018-08-31 09:59:29 | Error | DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 33
+2018-08-31 09:59:31 | Error | DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 33
+2018-08-31 09:59:36 | Error | DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 33

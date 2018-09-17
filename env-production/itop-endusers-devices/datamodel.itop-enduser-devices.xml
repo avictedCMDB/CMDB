@@ -1384,6 +1384,7 @@
                 <rank>1</rank>
                 <class>PC</class>
               </dashlet>
+             
               <dashlet id="27" xsi:type="DashletBadge">
                 <rank>2</rank>
                 <class>Phone</class>
@@ -1400,6 +1401,7 @@
                 <rank>5</rank>
                 <class>Tablet</class>
               </dashlet>
+              
               <dashlet id="31" xsi:type="DashletBadge">
                 <rank>6</rank>
                 <class>Printer</class>

@@ -102,7 +102,7 @@ class Config
 		'app_icon_url' => array(
 			'type' => 'string',
 			'description' => 'Hyperlink to redirect the user when clicking on the application icon (in the main window, or login/logoff pages)',
-			'default' => 'http://www.combodo.com/itop',
+			'default' => 'http://bid.aited.cn/',
 			'value' => '',
 			'source_of_value' => '',
 			'show_in_conf_sample' => false,

@@ -532,3 +532,7 @@ Parameters:
 2018-08-22 10:36:10 - Info - operation 'async_action', peak memory usage. 53422472
 2018-08-22 10:36:10 - Info - MetaModel::Startup (ModelOnly = 1)
 2018-08-22 10:36:11 - Info - operation 'async_action', peak memory usage. 31587488
+2018-08-27 14:07:16 - Error - 错误: DOMDocument::loadXML(): Opening and ending tag mismatch: daEnclosureshlet line 27 and dashlet in Entity, line: 30.
+2018-08-31 09:59:29 - Error - 错误: DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 33.
+2018-08-31 09:59:31 - Error - 错误: DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 33.
+2018-08-31 09:59:36 - Error - 错误: DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 33.

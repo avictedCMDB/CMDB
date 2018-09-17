@@ -21,6 +21,6 @@ class MenuCreation_itop_welcome_itil extends ModuleHandlerAPI
 		global $__comp_menus__; // ensure that the global variable is indeed global !
 		$__comp_menus__['WelcomeMenu'] = new MenuGroup('WelcomeMenu', 10);
 		$__comp_menus__['WelcomeMenuPage'] = new DashboardMenuNode('WelcomeMenuPage', dirname(__FILE__).'/welcomemenupage_dashboard_menu.xml', $__comp_menus__['WelcomeMenu']->GetIndex(), 10);
-		$__comp_menus__['MyShortcuts'] = new ShortcutContainerMenuNode('MyShortcuts', $__comp_menus__['WelcomeMenu']->GetIndex(), 20);
+		//$__comp_menus__['MyShortcuts'] = new ShortcutContainerMenuNode('MyShortcuts', $__comp_menus__['WelcomeMenu']->GetIndex(), 20);
 	}
 } // class MenuCreation_itop_welcome_itil

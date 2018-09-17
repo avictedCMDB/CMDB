@@ -92,7 +92,7 @@ class LoginWebPage extends NiceWebPage
 		}
 		else
 		{
-			$sLogo = 'itop-logo-external.png';
+			$sLogo = 'logo_11.png';// itop-logo-external.png
 			$sBrandingLogo = 'login-logo.png';
 		}
 		$sVersionShort = Dict::Format('UI:iTopVersion:Short', ITOP_APPLICATION, ITOP_VERSION);
