@@ -171,18 +171,24 @@ class ApplicationMenu
 		$iAccordion = 0;
 		$iActiveMenu = self::GetMenuIndexById(self::GetActiveNodeId());
 
+       /* Array (
+            [0] => Array ( [rank] => 10 [index] => 24 )
+            [1] => Array ( [rank] => 20 [index] => 7 )
+            [2] => Array ( [rank] => 30 [index] => 43 )//
+            [3] => Array ( [rank] => 35 [index] => 35 )//
+            [4] => Array ( [rank] => 50 [index] => 26 )//
+            [5] => Array ( [rank] => 60 [index] => 52 )//
+            [6] => Array ( [rank] => 70 [index] => 2 )
+            [7] => Array ( [rank] => 80 [index] => 0 )
+        )*/
 		//一级目录和数字对应关系：0->欢迎；1->配置管理;2->服务台;3->事件管理;4->变更管理;5->服务管理;6->数据管理;7->管理工具;
 		// modify by xulei delete first menue : the index is 2 3 4 5
-        $deteleMenuIndexArray = array(2,3,4,5);
-        $deleteMenuIndex = -1;
+        unset(self::$aRootMenus[2]);
+        unset(self::$aRootMenus[3]);
+        unset(self::$aRootMenus[4]);
+        unset(self::$aRootMenus[5]);
 
 		foreach(self::$aRootMenus as $aMenu) {
-
-		    //判断当前索引是否在删除的索引目录中：如果在，直接跳过；
-            $deleteMenuIndex++;
-            if (in_array($deleteMenuIndex,$deteleMenuIndexArray)) {
-                continue;
-            }
 
 			$oMenuNode = self::GetMenuNode($aMenu['index']);
 			if (!$oMenuNode->IsEnabled()) {

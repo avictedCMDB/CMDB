@@ -868,17 +868,17 @@ class MenuCreation_itop_request_mgmt_itil extends ModuleHandlerAPI
 	{
 		global $__comp_menus__; // ensure that the global variable is indeed global !
 		$__comp_menus__['RequestManagement'] = new MenuGroup('RequestManagement', 30);
-		$__comp_menus__['UserRequest:Overview'] = new DashboardMenuNode('UserRequest:Overview', dirname(__FILE__).'/userrequest_overview_dashboard_menu.xml', $__comp_menus__['RequestManagement']->GetIndex(), 0);
-		$__comp_menus__['NewUserRequest'] = new NewObjectMenuNode('NewUserRequest', 'UserRequest', $__comp_menus__['RequestManagement']->GetIndex(), 1);
-		$__comp_menus__['SearchUserRequests'] = new SearchMenuNode('SearchUserRequests', 'UserRequest', $__comp_menus__['RequestManagement']->GetIndex(), 2);
-		$__comp_menus__['UserRequest:Shortcuts'] = new TemplateMenuNode('UserRequest:Shortcuts', '', $__comp_menus__['RequestManagement']->GetIndex(), 3);
-		$__comp_menus__['UserRequest:MyRequests'] = new OQLMenuNode('UserRequest:MyRequests', "SELECT UserRequest WHERE agent_id = :current_contact_id AND status NOT IN (\"closed\",\"resolved\")", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 0, false, null);
-		$__comp_menus__['UserRequest:MyRequests']->SetParameters(array('auto_reload' => "fast"));
-		$__comp_menus__['UserRequest:EscalatedRequests'] = new OQLMenuNode('UserRequest:EscalatedRequests', "SELECT UserRequest WHERE status IN (\"escalated_tto\", \"escalated_ttr\") OR escalation_flag=\"yes\"", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 1, false, null);
-		$__comp_menus__['UserRequest:EscalatedRequests']->SetParameters(array('auto_reload' => "fast"));
-		$__comp_menus__['UserRequest:OpenRequests'] = new OQLMenuNode('UserRequest:OpenRequests', "SELECT UserRequest WHERE status NOT IN (\"closed\")", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 2, true, null);
-		$__comp_menus__['UserRequest:OpenRequests']->SetParameters(array('auto_reload' => "fast"));
-		$__comp_menus__['UserRequest:MySupportRequests'] = new OQLMenuNode('UserRequest:MySupportRequests', "SELECT UserRequest WHERE caller_id = :current_contact_id AND status NOT IN (\"closed\")", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 3, false, null);
-		$__comp_menus__['UserRequest:MySupportRequests']->SetParameters(array('auto_reload' => "fast"));
+        $__comp_menus__['UserRequest:Overview'] = new DashboardMenuNode('UserRequest:Overview', dirname(__FILE__).'/userrequest_overview_dashboard_menu.xml', $__comp_menus__['RequestManagement']->GetIndex(), 0);
+        $__comp_menus__['NewUserRequest'] = new NewObjectMenuNode('NewUserRequest', 'UserRequest', $__comp_menus__['RequestManagement']->GetIndex(), 1);
+        $__comp_menus__['SearchUserRequests'] = new SearchMenuNode('SearchUserRequests', 'UserRequest', $__comp_menus__['RequestManagement']->GetIndex(), 2);
+        $__comp_menus__['UserRequest:Shortcuts'] = new TemplateMenuNode('UserRequest:Shortcuts', '', $__comp_menus__['RequestManagement']->GetIndex(), 3);
+        $__comp_menus__['UserRequest:MyRequests'] = new OQLMenuNode('UserRequest:MyRequests', "SELECT UserRequest WHERE agent_id = :current_contact_id AND status NOT IN (\"closed\",\"resolved\")", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 0, false, null);
+        $__comp_menus__['UserRequest:MyRequests']->SetParameters(array('auto_reload' => "fast"));
+        $__comp_menus__['UserRequest:EscalatedRequests'] = new OQLMenuNode('UserRequest:EscalatedRequests', "SELECT UserRequest WHERE status IN (\"escalated_tto\", \"escalated_ttr\") OR escalation_flag=\"yes\"", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 1, false, null);
+        $__comp_menus__['UserRequest:EscalatedRequests']->SetParameters(array('auto_reload' => "fast"));
+        $__comp_menus__['UserRequest:OpenRequests'] = new OQLMenuNode('UserRequest:OpenRequests', "SELECT UserRequest WHERE status NOT IN (\"closed\")", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 2, true, null);
+        $__comp_menus__['UserRequest:OpenRequests']->SetParameters(array('auto_reload' => "fast"));
+        $__comp_menus__['UserRequest:MySupportRequests'] = new OQLMenuNode('UserRequest:MySupportRequests', "SELECT UserRequest WHERE caller_id = :current_contact_id AND status NOT IN (\"closed\")", $__comp_menus__['UserRequest:Shortcuts']->GetIndex(), 3, false, null);
+        $__comp_menus__['UserRequest:MySupportRequests']->SetParameters(array('auto_reload' => "fast"));
 	}
 } // class MenuCreation_itop_request_mgmt_itil
