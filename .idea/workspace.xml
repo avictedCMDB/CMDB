@@ -4,7 +4,7 @@
     <list default="true" id="bac6f5c8-7b1c-4a78-b5a6-66c5435f8cf3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/menunode.class.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/menunode.class.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache-production/apc-emul/itop-e9fc816163e301f1af22b0b729bd357a-production-dict-ZH-CN" beforeDir="false" afterPath="$PROJECT_DIR$/data/cache-production/apc-emul/itop-e9fc816163e301f1af22b0b729bd357a-production-dict-ZH-CN" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env-production/itop-datacenter-mgmt/model.itop-datacenter-mgmt.php" beforeDir="false" afterPath="$PROJECT_DIR$/env-production/itop-datacenter-mgmt/model.itop-datacenter-mgmt.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,14 +30,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="log" value="6" />
-          <entry key="php" value="460" />
+          <entry key="php" value="607" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="6" />
           <entry key="Log" value="6" />
-          <entry key="PHP" value="460" />
+          <entry key="PHP" value="601" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
@@ -51,9 +52,9 @@
           <entry key="itop-e9fc816163e301f1af22b0b729bd357a-production-dict-ZH-CN" value="1" />
           <entry key="js" value="1" />
           <entry key="log" value="5" />
-          <entry key="php" value="53" />
+          <entry key="php" value="67" />
           <entry key="png" value="4" />
-          <entry key="xml" value="32" />
+          <entry key="xml" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -62,9 +63,9 @@
           <entry key="Image" value="4" />
           <entry key="JavaScript" value="1" />
           <entry key="Log" value="5" />
-          <entry key="PHP" value="53" />
+          <entry key="PHP" value="67" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="XML" value="32" />
+          <entry key="XML" value="33" />
         </counts>
       </usages-collector>
     </session>
@@ -77,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/model.itop-config-mgmt.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="95" column="103" selection-start-line="95" selection-start-column="103" selection-end-line="95" selection-end-column="103" />
+            <state relative-caret-position="474">
+              <caret line="106" column="56" lean-forward="true" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
               <folding>
                 <element signature="e#417#3059#0#PHP" />
                 <element signature="e#6626#9978#0#PHP" />
@@ -101,17 +102,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/menunode.class.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="188" column="61" lean-forward="true" selection-start-line="188" selection-start-column="61" selection-end-line="188" selection-end-column="61" />
+            <state relative-caret-position="352">
+              <caret line="240" column="59" lean-forward="true" selection-start-line="240" selection-start-column="59" selection-end-line="240" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/env-production/dictionaries/zh-cn.dict.php">
+        <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/model.itop-welcome-itil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="3809" column="48" lean-forward="true" selection-start-line="3809" selection-start-column="48" selection-end-line="3809" selection-end-column="48" />
+            <state relative-caret-position="483">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/env-production/itop-datacenter-mgmt/model.itop-datacenter-mgmt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="451" lean-forward="true" selection-start-line="451" selection-end-line="451" />
             </state>
           </provider>
         </entry>
@@ -120,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>数据管理</find>
       <find>CSV 导入</find>
       <find>CSV</find>
       <find>审计</find>
@@ -147,8 +156,10 @@
       <find>vertical-align:middle</find>
       <find>AccordionMenu_IncidentManagement</find>
       <find>AccordionMenu_Incident_Overview</find>
-      <find>AccordionMenu_</find>
       <find>服务台</find>
+      <find>AccordionMenu_</find>
+      <find>新建配置项</find>
+      <find>GetMenuNodde</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -172,6 +183,8 @@
         <option value="$PROJECT_DIR$/data/cache-production/apc-emul/itop-7b0ad390c5fef1b0e518b5448d6265b4-production-dict-ZH-CN" />
         <option value="$PROJECT_DIR$/data/cache-production/apc-emul/itop-e9fc816163e301f1af22b0b729bd357a-production-dict-ZH-CN" />
         <option value="$PROJECT_DIR$/env-production/dictionaries/zh-cn.dict.php" />
+        <option value="$PROJECT_DIR$/env-production/itop-welcome-itil/model.itop-welcome-itil.php" />
+        <option value="$PROJECT_DIR$/env-production/itop-datacenter-mgmt/model.itop-datacenter-mgmt.php" />
         <option value="$PROJECT_DIR$/application/menunode.class.inc.php" />
       </list>
     </option>
@@ -182,10 +195,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="44" />
-    <option name="y" value="40" />
-    <option name="width" value="1854" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1858" />
     <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
@@ -200,11 +211,6 @@
             <path>
               <item name="CMDB" type="b2602c69:ProjectViewProjectNode" />
               <item name="CMDB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMDB" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CMDB" type="b2602c69:ProjectViewProjectNode" />
@@ -226,7 +232,13 @@
               <item name="CMDB" type="b2602c69:ProjectViewProjectNode" />
               <item name="CMDB" type="462c0819:PsiDirectoryNode" />
               <item name="env-production" type="462c0819:PsiDirectoryNode" />
-              <item name="itop-config-mgmt" type="462c0819:PsiDirectoryNode" />
+              <item name="itop-change-mgmt-itil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMDB" type="462c0819:PsiDirectoryNode" />
+              <item name="env-production" type="462c0819:PsiDirectoryNode" />
+              <item name="itop-datacenter-mgmt" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,12 +282,12 @@
       <workItem from="1536740404421" duration="6060000" />
       <workItem from="1536890884617" duration="4184000" />
       <workItem from="1536904128198" duration="3588000" />
-      <workItem from="1537149996320" duration="4888000" />
+      <workItem from="1537149996320" duration="7208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41930000" />
+    <option name="totallyTimeSpent" value="44250000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -287,10 +299,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="40" width="1854" height="1039" extended-state="0" />
+    <frame x="0" y="0" width="1858" height="1039" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917626" visible="true" weight="0.1516165" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917626" visible="true" weight="0.18854283" />
       <window_info id="Structure" order="1" sideWeight="0.50082374" side_tool="true" weight="0.1920045" />
       <window_info id="Favorites" order="2" sideWeight="0.50082374" side_tool="true" weight="0.1920045" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -344,80 +356,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.applicationsolutionci.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.brand.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.contactteam.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/images/person.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/images/application.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.osversion.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.persons.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756">
-          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.servers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.webapp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.webserver.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.teams.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.software.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/data.sample.applications.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -543,24 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-datacenter-mgmt/module.itop-datacenter-mgmt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-ui-1.10.3.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="5" column="89719" selection-start-line="5" selection-start-column="89719" selection-end-line="5" selection-end-column="89719" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/utils.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="639" column="56" selection-start-line="639" selection-start-column="44" selection-end-line="639" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -637,28 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/model.itop-config-mgmt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="95" column="103" selection-start-line="95" selection-start-column="103" selection-end-line="95" selection-end-column="103" />
-          <folding>
-            <element signature="e#417#3059#0#PHP" />
-            <element signature="e#6626#9978#0#PHP" />
-            <element signature="e#9981#16001#0#PHP" />
-            <element signature="e#16004#17681#0#PHP" />
-            <element signature="e#17684#21749#0#PHP" />
-            <element signature="e#21752#23580#0#PHP" />
-            <element signature="e#23583#24895#0#PHP" />
-            <element signature="e#24898#26173#0#PHP" />
-            <element signature="e#26176#34334#0#PHP" />
-            <element signature="e#34337#38922#0#PHP" />
-            <element signature="e#38925#41429#0#PHP" />
-            <element signature="e#41432#47056#0#PHP" />
-            <element signature="e#47059#52067#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/cache-production/apc-emul/itop-7b0ad390c5fef1b0e518b5448d6265b4-production-dict-ZH-CN">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -687,10 +589,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/menunode.class.inc.php">
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/module.itop-welcome-itil.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="188" column="61" lean-forward="true" selection-start-line="188" selection-start-column="61" selection-end-line="188" selection-end-column="61" />
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/cs.dict.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/datamodel.itop-welcome-itil.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/de.dict.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/en.dict.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/es_cr.dict.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/fr.dict.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/hu.dict.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/main.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-datacenter-mgmt/module.itop-datacenter-mgmt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-change-mgmt-itil/model.itop-change-mgmt-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3339" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-welcome-itil/model.itop-welcome-itil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-config-mgmt/model.itop-config-mgmt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="106" column="56" lean-forward="true" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
+          <folding>
+            <element signature="e#417#3059#0#PHP" />
+            <element signature="e#6626#9978#0#PHP" />
+            <element signature="e#9981#16001#0#PHP" />
+            <element signature="e#16004#17681#0#PHP" />
+            <element signature="e#17684#21749#0#PHP" />
+            <element signature="e#21752#23580#0#PHP" />
+            <element signature="e#23583#24895#0#PHP" />
+            <element signature="e#24898#26173#0#PHP" />
+            <element signature="e#26176#34334#0#PHP" />
+            <element signature="e#34337#38922#0#PHP" />
+            <element signature="e#38925#41429#0#PHP" />
+            <element signature="e#41432#47056#0#PHP" />
+            <element signature="e#47059#52067#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/utils.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="1133" column="70" lean-forward="true" selection-start-line="1133" selection-start-column="70" selection-end-line="1133" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env-production/itop-datacenter-mgmt/model.itop-datacenter-mgmt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="451" lean-forward="true" selection-start-line="451" selection-end-line="451" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/menunode.class.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="240" column="59" lean-forward="true" selection-start-line="240" selection-start-column="59" selection-end-line="240" selection-end-column="59" />
         </state>
       </provider>
     </entry>

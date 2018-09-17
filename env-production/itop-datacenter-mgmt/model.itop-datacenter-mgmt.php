@@ -274,24 +274,25 @@ abstract class PowerConnection extends PhysicalDevice
 		{
 		case 'impacts':
 			$aRels = array(
-				'datacenterdevice' => array (
-  '_legacy_' => false,
-  'sDirection' => 'both',
-  'sDefinedInClass' => 'PowerConnection',
-  'sNeighbour' => 'datacenterdevice',
-  'sQueryDown' => 'SELECT DatacenterDevice WHERE powerA_id = :this->id OR powerB_id = :this->id',
-  'sQueryUp' => 'SELECT PowerConnection WHERE id = :this->powerA_id OR id = :this->powerB_id',
-  'sAttribute' => NULL,
-),
+			    'datacenterdevice' => array (
+                    '_legacy_' => false,
+                    'sDirection' => 'both',
+                    'sDefinedInClass' => 'PowerConnection',
+                    'sNeighbour' => 'datacenterdevice',
+                    'sQueryDown' => 'SELECT DatacenterDevice WHERE powerA_id = :this->id OR powerB_id = :this->id',
+                    'sQueryUp' => 'SELECT PowerConnection WHERE id = :this->powerA_id OR id = :this->powerB_id',
+                    'sAttribute' => NULL,
+                ),
+
 				'pdu' => array (
-  '_legacy_' => false,
-  'sDirection' => 'both',
-  'sDefinedInClass' => 'PowerConnection',
-  'sNeighbour' => 'pdu',
-  'sQueryDown' => 'SELECT PDU WHERE powerstart_id = :this->id',
-  'sQueryUp' => 'SELECT PowerConnection WHERE id = :this->powerstart_id',
-  'sAttribute' => NULL,
-),
+				    '_legacy_' => false,
+                    'sDirection' => 'both',
+                    'sDefinedInClass' => 'PowerConnection',
+                    'sNeighbour' => 'pdu',
+                    'sQueryDown' => 'SELECT PDU WHERE powerstart_id = :this->id',
+                    'sQueryUp' => 'SELECT PowerConnection WHERE id = :this->powerstart_id',
+                    'sAttribute' => NULL,
+                ),
 			);
 			return array_merge($aRels, parent::GetRelationQueriesEx($sRelCode));
 

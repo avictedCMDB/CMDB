@@ -199,7 +199,7 @@ class ApplicationMenu
 				$oPage->AddToMenu('</ul>');
 				if ($bActive)
 				{
-$oPage->add_ready_script(
+				    $oPage->add_ready_script(
 <<<EOF
 		// Accordion Menu
 		$("#accordion").css({display:'block'}).accordion({ header: "h3", navigation: true, heightStyle: "content", collapsible: true,  active: $iAccordion, icons: false, animate:true }); // collapsible will be enabled once the item will be selected
@@ -235,8 +235,8 @@ EOF
 					$oPage->AddToMenu('<li id="'.utils::GetSafeId('AccordionMenu_'.$oMenu->GetMenuID()).'"'.$sCSSClass.'><a href="'.$oMenu->GetHyperlink($aExtraParams).'">'.$oMenu->GetTitle().'</a></li>');
 				}
 				else
-				{
-					$oPage->AddToMenu('<li id="'.utils::GetSafeId('AccordionMenu_'.$oMenu->GetMenuID()).'"'.$sCSSClass.'>'.$oMenu->GetTitle().'</li>');
+				{   //modify by xulei at time 2018.09.17
+					//$oPage->AddToMenu('<li id="'.utils::GetSafeId('AccordionMenu_'.$oMenu->GetMenuID()).'"'.$sCSSClass.'>'.$oMenu->GetTitle().'</li>');
 				}
 				$aCurrentMenu = self::$aMenusIndex[$index];
 				if ($iActiveMenu == $index)
@@ -245,9 +245,9 @@ EOF
 				}
 				if (count($aChildren) > 0)
 				{
-					$oPage->AddToMenu('<ul>');
+					//$oPage->AddToMenu('<ul>');
 					$bActive |= self::DisplaySubMenu($oPage, $aChildren, $aExtraParams, $iActiveMenu);
-					$oPage->AddToMenu('</ul>');
+					//$oPage->AddToMenu('</ul>');
 				}
 			}
 		}
