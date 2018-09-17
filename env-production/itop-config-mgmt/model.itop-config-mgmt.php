@@ -3995,7 +3995,7 @@ class MenuCreation_itop_config_mgmt extends ModuleHandlerAPI
 		global $__comp_menus__; // ensure that the global variable is indeed global !
 		$__comp_menus__['DataAdministration'] = new MenuGroup('DataAdministration', 70, 'Organization', UR_ACTION_MODIFY, UR_ALLOWED_YES);
 		$__comp_menus__['CSVImport'] = new WebPageMenuNode('CSVImport', utils::GetAbsoluteUrlAppRoot()."pages/csvimport.php", $__comp_menus__['DataAdministration']->GetIndex(), 10);
-		$__comp_menus__['Audit'] = new WebPageMenuNode('Audit', utils::GetAbsoluteUrlAppRoot()."pages/audit.php", $__comp_menus__['DataAdministration']->GetIndex(), 33);
+		//$__comp_menus__['Audit'] = new WebPageMenuNode('Audit', utils::GetAbsoluteUrlAppRoot()."pages/audit.php", $__comp_menus__['DataAdministration']->GetIndex(), 33);
 		$__comp_menus__['Catalogs'] = new TemplateMenuNode('Catalogs', '', $__comp_menus__['DataAdministration']->GetIndex(), 50);
 		$__comp_menus__['Organization'] = new OQLMenuNode('Organization', "SELECT Organization", $__comp_menus__['Catalogs']->GetIndex(), 10, true, null);
 		$__comp_menus__['ConfigManagement'] = new MenuGroup('ConfigManagement', 20);
@@ -4009,6 +4009,6 @@ class MenuCreation_itop_config_mgmt extends ModuleHandlerAPI
 		//$__comp_menus__['Document'] = new OQLMenuNode('Document', "SELECT Document", $__comp_menus__['ConfigManagement']->GetIndex(), 6, true, null);
 		$__comp_menus__['Software'] = new OQLMenuNode('Software', "SELECT Software", $__comp_menus__['ConfigManagement']->GetIndex(), 7, true, null);
 		//$__comp_menus__['Group'] = new OQLMenuNode('Group', "SELECT Group", $__comp_menus__['ConfigManagement']->GetIndex(), 8, true, null);
-		$__comp_menus__['Typology'] = new DashboardMenuNode('Typology', dirname(__FILE__).'/typology_dashboard_menu.xml', $__comp_menus__['Catalogs']->GetIndex(), 80);
+		//$__comp_menus__['Typology'] = new DashboardMenuNode('Typology', dirname(__FILE__).'/typology_dashboard_menu.xml', $__comp_menus__['Catalogs']->GetIndex(), 80);
 	}
 } // class MenuCreation_itop_config_mgmt

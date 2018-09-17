@@ -24,7 +24,7 @@ class ItopConfigEditor extends ModuleHandlerAPI
 		if (UserRights::IsAdministrator())
 		{
 			$oAdminMenu = new MenuGroup('AdminTools', 80 /* fRank */);
-			new WebPageMenuNode('ConfigEditor', utils::GetAbsoluteUrlModulesRoot().'itop-config/config.php', $oAdminMenu->GetIndex(), 18 /* fRank */);
+			//new WebPageMenuNode('ConfigEditor', utils::GetAbsoluteUrlModulesRoot().'itop-config/config.php', $oAdminMenu->GetIndex(), 18 /* fRank */);
 		}
 	}
 }

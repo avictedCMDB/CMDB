@@ -217,7 +217,8 @@ EOF
 			$iAccordion++;
 		}
 	}
-	
+
+
 	/**
 	 * Handles the display of the sub-menus (called recursively if necessary)
 	 * @return true if the currently selected menu is one of the submenus
@@ -227,8 +228,12 @@ EOF
 		// Sort the menu based on the rank
 		$bActive = false;
 		usort($aMenus, array('ApplicationMenu', 'CompareOnRank'));
+
 		foreach($aMenus as $aMenu)
 		{
+            $oMenu = self::GetMenuNode(12);
+            //print_r($oMenu);exit();
+
 			$index = $aMenu['index'];
 			$oMenu = self::GetMenuNode($index);
 			if ($oMenu->IsEnabled())
